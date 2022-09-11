@@ -2,7 +2,7 @@ $(document).ready(function () {
     let count = 0;
     window.setInterval(function () {
         $('body').append("<span id = " + count + "> <div/>")
-        $('#' + count).text("Sorry\n");
+        $('#' + count).text("sorry\n");
         count += 1;
     }, 200);
 });
