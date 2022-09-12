@@ -1,8 +1,9 @@
 $(document).ready(function () {
     let count = 0;
     window.setInterval(function () {
-        $('body').append("<span id = " + count + "> <div/>")
-        $('#' + count).text("sorry\n");
+        var classNumber = Math.floor(Math.random() * 10) + 1;
+        $('body').append("<span id = " + count + " class =c" + classNumber +"> <div/>")
+        $('#' + count).text("really sorry\n");
         count += 1;
     }, 200);
 });
